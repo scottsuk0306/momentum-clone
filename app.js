@@ -2,8 +2,9 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input")
 const longinButton = loginForm.querySelector("button")
 
-function onLoginBtnClick() {
-    console.dir(loginInput)
+function onLoginSubmit(info) {
+    info.preventDefault();
+    console.log(info)
 }
 
-longinButton.addEventListener("click", onLoginBtnClick)
+longinButton.addEventListener("submit", onLoginSubmit)
