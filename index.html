@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+<html>
+  <head>
     <title>Momentum</title>
-</head>
-<body>
-    <form id="login-form">
-        <input 
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?" 
-        />
-        <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class = "js-clock">
+      <h1 class = "js-title">00:00:00</h1>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quote.js"></script>
-    <script src="js/background.js"></script>
-</body>
+
+    <form class="js-form form">
+      <input type="text" placeholder="당신의 이름은?"/>
+    </form>
+
+    <h4 class ="js-greetings greetings"></h4>
+
+    <form class="js-toDoForm">
+      <input type="text" placeholder="오늘도 화이팅!" />
+    </form>
+
+    <ul class ="js-toDoList"></ul>
+    <span class="js-weather"></span>
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
 </html>
